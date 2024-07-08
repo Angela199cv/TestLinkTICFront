@@ -1,26 +1,46 @@
+<script>
+	import { Button } from 'flowbite-svelte';
+	import { setCookie } from '../../cookies';
+
+	let privileged = false;
+
+
+	const handlePrivileged = () => {
+		privileged = !privileged;
+		setCookie('privileged', privileged, 30);
+	};
+
+	export { privileged };
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>ABOUT THIS APP</h1>
-
+	<h1>About this app</h1>
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		This website is a specific ecommerce for electronic equipment. It is based on general commerce
+		pages. Images with copyright were used to generate greater aesthetics and because it will not be
+		for a commercial view but for testing.
 	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+	<p class="bold">
+		Market prices were used but not exact and some references were changed to respect the brand.
 	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
+	<h1>PRIVILEGED USER</h1>
+	<p>If you are a privileged user please press this button to delete or edit the information</p>
+	<Button color="light" class="dark:text-white" on:click={handlePrivileged}>PRIVILEGED USER</Button>
 </div>
+
+<style>
+	.bold {
+		font-weight: bold;
+	}
+
+	.text-column {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+</style>

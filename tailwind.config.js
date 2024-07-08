@@ -14,4 +14,8 @@ export default {
 	plugins: [],
   };
   
+  const config = {
+	darkMode: 'class'
+	// ...
+  };
   

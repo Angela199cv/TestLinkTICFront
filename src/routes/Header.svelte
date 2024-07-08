@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/logo.png';
-	import { AddressBookOutline } from 'flowbite-svelte-icons';
+	import { ShoppingBagSolid } from 'flowbite-svelte-icons';
 </script>
 
 <header>
@@ -23,7 +23,7 @@
 				<a href="/about">About</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/sverdle"><AddressBookOutline /></a>
+				<a href="/sverdle"><ShoppingBagSolid /></a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -118,6 +118,6 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: var(--color-theme-2);
 	}
 </style>
