@@ -1,38 +1,19 @@
-# create-svelte
+Frontend Svelte para Backend TypeScript con MySQL
+Este proyecto implementa un frontend utilizando Svelte que se conecta al backend TypeScript que interactúa con una base de datos MySQL. Proporciona una interfaz de usuario para gestionar productos.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Requisitos previos
+Asegúrate de tener instalado Node.js y npm (Node Package Manager) en tu máquina.
 
-## Creating a project
+Configuración
+Clonar el repositorio:
 
-If you're seeing this, you've probably already done this step. Congrats!
+bash
+Copiar código
+git clone https://github.com/Angela199cv/TestLinkTICFront.git
+Instalar dependencias:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+bash
+npm install
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+una vez terminado ingrese el comando 
+npm run dev -- --open abrira el backend en su navegador predeterminado, es importante que el backend y el frontend esten corriendo al mismo tiempo para poder realizar correctamente su funcionamiento y que los puertos 4000 y 5173
